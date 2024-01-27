@@ -11,7 +11,7 @@ public class KafkaConfig{
         System.out.println("Location received: "+value);
     }
 
-
+    //new consumer group
     @KafkaListener(topics = AppConstants.LOC_UPDATE_TOPIC,groupId = AppConstants.GROUP_ID+1)
     public void updateLoc1(String value){
         System.out.println("Location received1111: "+value);
